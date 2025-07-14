@@ -10,6 +10,7 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include "gapDetectionInterface.h"
 
 using namespace std;
 using namespace cv;
@@ -52,7 +53,38 @@ void SavePointCloudToPCDBin(const std::vector<std::vector<cv::Point2f>>& pointCl
 	file.close();
 	std::cout << "Point cloud saved to " << filename << std::endl;
 }
-#include "gapDetectionInterface.h"
+
+// 保存点云数据到 PLY 文件
+void savePointCloudToPLY(const std::vector<std::vector<cv::Point2f>>& pointClouds, const std::string& filename)
+{
+	// 打开文件
+	std::ofstream plyFile(filename);
+	if (!plyFile.is_open()) {
+		std::cerr << "Error: Could not open the file for writing!" << std::endl;
+		return;
+	}
+
+	// 写入 PLY 头部
+	plyFile << "ply\n";
+	plyFile << "format ascii 1.0\n";
+	plyFile << "element vertex " << pointClouds.size() * pointClouds[0].size() << "\n"; // 总点数
+	plyFile << "property float x\n";
+	plyFile << "property float y\n";
+	plyFile << "property float z\n"; // 添加 z 属性
+	plyFile << "end_header\n";
+
+	// 写入点云数据
+	for (const auto& cloud : pointClouds) {
+		for (const auto& point : cloud) {
+			plyFile << point.x << " " << point.y << " " << 0.0f << "\n"; // z 值设为 0
+		}
+	}
+
+	// 关闭文件
+	plyFile.close();
+	std::cout << "Point cloud saved to " << filename << std::endl;
+}
+
 int main()
 {
 	try {
@@ -84,50 +116,50 @@ int main()
 		iret = mgapDetectionInterface.setDeviceParams(serialNumber2, rightcameraParams);
 
 		//获取点云,远中近采集校准点云
-		vector<vector<Point2f>> LeftPoint, RightPoint;
-		{
-			int count = 0;
-			uint16_t dataType = 1;
-			std::vector<std::vector<cv::Point2f>> pointClouds1, pointClouds2, pointClouds3;
-			iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds1);
-			if (iret != 0)
-			{
-				cout << "获取点云失败:" << iret << endl;
-				return -1;
-			}
+		//vector<vector<Point2f>> LeftPoint, RightPoint;
+		//{
+		//	int count = 0;
+		//	uint16_t dataType = 1;
+		//	std::vector<std::vector<cv::Point2f>> pointClouds1, pointClouds2, pointClouds3;
+		//	iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds1);
+		//	if (iret != 0)
+		//	{
+		//		cout << "获取点云失败:" << iret << endl;
+		//		return -1;
+		//	}
 
-			iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds2);
-			if (iret != 0)
-			{
-				cout << "获取点云失败:" << iret << endl;
-				return -1;
-			}
+		//	iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds2);
+		//	if (iret != 0)
+		//	{
+		//		cout << "获取点云失败:" << iret << endl;
+		//		return -1;
+		//	}
 
-			iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds3);
-			if (iret != 0)
-			{
-				cout << "获取点云失败:" << iret << endl;
-				return -1;
-			}
+		//	iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds3);
+		//	if (iret != 0)
+		//	{
+		//		cout << "获取点云失败:" << iret << endl;
+		//		return -1;
+		//	}
 
-			LeftPoint.push_back(pointClouds1[0]);
-			RightPoint.push_back(pointClouds1[1]);
-			LeftPoint.push_back(pointClouds2[0]);
-			RightPoint.push_back(pointClouds2[1]);
-			LeftPoint.push_back(pointClouds3[0]);
-			RightPoint.push_back(pointClouds3[1]);
-		}
+		//	LeftPoint.push_back(pointClouds1[0]);
+		//	RightPoint.push_back(pointClouds1[1]);
+		//	LeftPoint.push_back(pointClouds2[0]);
+		//	RightPoint.push_back(pointClouds2[1]);
+		//	LeftPoint.push_back(pointClouds3[0]);
+		//	RightPoint.push_back(pointClouds3[1]);
+		//}
 
-		//校准
-		vector<vector<cv::Point2f>> crossPts1, crossPts2;
-		Mat matrix2;
+		////校准
+		//vector<vector<cv::Point2f>> crossPts1, crossPts2;
+		//Mat matrix2;
 
-		iret = mgapDetectionInterface.getMatrix(LeftPoint, RightPoint, 20, 0.2, 10, crossPts1, crossPts2, matrix2);
-		if (iret != 0)
-		{
-			cout << "校准失败：" << iret << endl;
-			return -1;
-		}
+		//iret = mgapDetectionInterface.getMatrix(LeftPoint, RightPoint, 20, 0.2, 10, crossPts1, crossPts2, matrix2);
+		//if (iret != 0)
+		//{
+		//	cout << "校准失败：" << iret << endl;
+		//	return -1;
+		//}
 		uint16_t dataType = 1;
 		std::vector<std::vector<cv::Point2f>> pointClouds;
 		iret = mgapDetectionInterface.getPointCloud(dataType, pointClouds);
@@ -144,11 +176,11 @@ int main()
 		// 输出文件名
 		cout << "输出文件名：" << fileName << endl;
 		cout << "获取点云成功，点云数量：" << pointClouds.size() << endl;
-		SavePointCloudToPCDBin(pointClouds, fileName);
+		savePointCloudToPLY(pointClouds, fileName);
 
 		//获取校准后的数据
-		vector<vector<Point2f>> out_pointCloud;
-		iret = mgapDetectionInterface.getCalPointCloud(matrix2, pointClouds, out_pointCloud);
+		//vector<vector<Point2f>> out_pointCloud;
+		//iret = mgapDetectionInterface.getCalPointCloud(matrix2, pointClouds, out_pointCloud);
 
 		//将坐标系转水平
 		Mat Rt;
@@ -160,7 +192,7 @@ int main()
 		std::string fileName2 = "output_2.pcd";
 		cout << "输出文件名：" << fileName2 << endl;
 		cout << "获取点云成功，点云数量：" << pointClouds.size() << endl;
-		SavePointCloudToPCDBin(out_pointCloud2, fileName2);
+		savePointCloudToPLY(out_pointCloud2, fileName2);
 
 		if (iret != 0)
 		{
