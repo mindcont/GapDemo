@@ -1,0 +1,17 @@
+pattern: "%Y-%m-%d %H:%M:%S.%e [%5l] <%n> %s:%# [thread-%t] %v"
+level: trace
+console: 
+    enable: true
+    pattern: "%Y-%m-%d %H:%M:%S.%e [%5l] <%n> %s:%# [thread-%t] %v"
+    level: trace
+qt: 
+    enable: true
+    pattern: "%Y-%m-%d %H:%M:%S.%e [%5l] %v"
+    level: info
+file: 
+    enable: true
+    pattern: "%Y-%m-%d %H:%M:%S.%e [%5l] <%n> %s:%# [thread-%t] %v"
+    level: trace
+    path: ./logs/AlsonGapDetection-Test.log
+    maxSize: 52428800
+    maxFiles: 5

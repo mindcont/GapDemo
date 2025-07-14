@@ -1,0 +1,38 @@
+﻿  demo.cpp
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\AlsonGapDetection\0.0.2.1\include\gapDetectionInterface.h(131,17): warning C4251: “gapDetectionInterface::file1Ptah”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“gapDetectionInterface”的客户端使用
+  (编译源文件“/demo.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.42.34433\include\xstring(527,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\AlsonGapDetection\0.0.2.1\include\gapDetectionInterface.h(131,27): warning C4251: “gapDetectionInterface::file2Path”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“gapDetectionInterface”的客户端使用
+  (编译源文件“/demo.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.42.34433\include\xstring(527,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\AlsonGapDetection\0.0.2.1\include\gapDetectionInterface.h(131,37): warning C4251: “gapDetectionInterface::filePath”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“gapDetectionInterface”的客户端使用
+  (编译源文件“/demo.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.42.34433\include\xstring(527,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\AlsonGapDetection\0.0.2.1\include\gapDetectionInterface.h(132,17): warning C4251: “gapDetectionInterface::mPortName”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“gapDetectionInterface”的客户端使用
+  (编译源文件“/demo.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.42.34433\include\xstring(527,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\AlsonGapDetection\0.0.2.1\include\gapDetectionInterface.h(133,17): warning C4251: “gapDetectionInterface::mDeviceType”:“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口以供“gapDetectionInterface”的客户端使用
+  (编译源文件“/demo.cpp”)
+      C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.42.34433\include\xstring(527,7):
+      参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(125,70): warning C4305: “参数”: 从“double”到“float”截断
+  (编译源文件“/demo.cpp”)
+  
+    正在创建库 C:\Users\zhengxuan.zhang\Desktop\Gap\demo\x64\Release\demo.lib 和对象 C:\Users\zhengxuan.zhang\Desktop\Gap\demo\x64\Release\demo.exp
+  正在生成代码
+  90 of 407 functions (22.1%) were compiled, the rest were copied from previous compilation.
+    88 functions were new in current compilation
+    37 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  demo.vcxproj -> C:\Users\zhengxuan.zhang\Desktop\Gap\demo\x64\Release\demo.exe
+  'pwsh.exe' 不是内部或外部命令，也不是可运行的程序
+  或批处理文件。

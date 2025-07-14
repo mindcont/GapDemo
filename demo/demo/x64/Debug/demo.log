@@ -1,0 +1,114 @@
+﻿  demo.cpp
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(60,3): error C2065: “gapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(60,25): error C2146: 语法错误: 缺少“;”(在标识符“mgapDetectionInterface”的前面)
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(60,25): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(63,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(72,3): error C2065: “cameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(72,16): error C2146: 语法错误: 缺少“;”(在标识符“mcameraParams”的前面)
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(72,16): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(73,3): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(74,3): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(75,3): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(76,3): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(77,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(77,63): error C2065: “mcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(79,3): error C2065: “cameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(79,16): error C2146: 语法错误: 缺少“;”(在标识符“rightcameraParams”的前面)
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(79,16): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(80,3): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(81,3): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(82,3): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(83,3): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(84,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(84,64): error C2065: “rightcameraParams”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(92,11): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(99,11): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(106,11): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(125,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(133,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(142,38): error C3861: “GetCurrentTimeString”: 找不到标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(147,26): error C2065: “cvPointClouds”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(147,3): error C3861: “SavePointCloudToPCDBin”: 找不到标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(151,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(156,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(160,15): error C2374: “fileName”: 重定义；多次初始化
+  (编译源文件“/demo.cpp”)
+      C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(142,15):
+      参见“fileName”的声明
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(160,38): error C3861: “GetCurrentTimeString”: 找不到标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(163,26): error C2065: “cvPointClouds”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(163,3): error C3861: “SavePointCloudToPCDBin”: 找不到标识符
+  (编译源文件“/demo.cpp”)
+  
+C:\Users\zhengxuan.zhang\Desktop\Gap\demo\demo\demo.cpp(171,10): error C2065: “mgapDetectionInterface”: 未声明的标识符
+  (编译源文件“/demo.cpp”)
+  

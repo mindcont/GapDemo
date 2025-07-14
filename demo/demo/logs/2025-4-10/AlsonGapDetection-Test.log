@@ -1,0 +1,56 @@
+2025-04-10 17:40:05.560 [trace] <main> BaseCamera.cpp:28 [thread-10444] ready to open Camera (23916949)
+2025-04-10 17:40:05.560 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-10444] no avt environment
+2025-04-10 17:40:05.560 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-10444] no basler library
+2025-04-10 17:40:05.560 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-10444] no da hua library
+2025-04-10 17:40:05.560 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-10444] no flir environment
+2025-04-10 17:40:05.560 [ info] <main> BaseCamera.cpp:34 [thread-10444] camera Information is empty.
+2025-04-10 17:40:05.561 [trace] <main> BaseCamera.cpp:28 [thread-10444] ready to open Camera (23893725)
+2025-04-10 17:40:05.562 [ info] <main> BaseCamera.cpp:34 [thread-10444] camera Information is empty.
+2025-04-10 17:42:37.822 [trace] <main> BaseCamera.cpp:28 [thread-19920] ready to open Camera (23916949)
+2025-04-10 17:42:37.822 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-19920] no avt environment
+2025-04-10 17:42:37.822 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-19920] no basler library
+2025-04-10 17:42:37.823 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-19920] no da hua library
+2025-04-10 17:42:37.823 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-19920] no flir environment
+2025-04-10 17:42:37.823 [ info] <main> BaseCamera.cpp:34 [thread-19920] camera Information is empty.
+2025-04-10 17:42:37.823 [trace] <main> BaseCamera.cpp:28 [thread-19920] ready to open Camera (23893725)
+2025-04-10 17:42:37.823 [ info] <main> BaseCamera.cpp:34 [thread-19920] camera Information is empty.
+2025-04-10 17:45:28.397 [trace] <main> BaseCamera.cpp:28 [thread-17504] ready to open Camera (23916949)
+2025-04-10 17:45:28.398 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-17504] no avt environment
+2025-04-10 17:45:28.398 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-17504] no basler library
+2025-04-10 17:45:28.398 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-17504] no da hua library
+2025-04-10 17:45:28.398 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-17504] no flir environment
+2025-04-10 17:45:28.398 [ info] <main> BaseCamera.cpp:34 [thread-17504] camera Information is empty.
+2025-04-10 17:45:28.398 [trace] <main> BaseCamera.cpp:28 [thread-17504] ready to open Camera (23893725)
+2025-04-10 17:45:28.398 [ info] <main> BaseCamera.cpp:34 [thread-17504] camera Information is empty.
+2025-04-10 17:46:05.595 [trace] <main> BaseCamera.cpp:28 [thread-21300] ready to open Camera (23916949)
+2025-04-10 17:46:05.595 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-21300] no avt environment
+2025-04-10 17:46:05.596 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-21300] no basler library
+2025-04-10 17:46:05.596 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-21300] no da hua library
+2025-04-10 17:46:05.596 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-21300] no flir environment
+2025-04-10 17:46:05.596 [ info] <main> BaseCamera.cpp:34 [thread-21300] camera Information is empty.
+2025-04-10 17:46:05.596 [trace] <main> BaseCamera.cpp:28 [thread-21300] ready to open Camera (23893725)
+2025-04-10 17:46:05.596 [ info] <main> BaseCamera.cpp:34 [thread-21300] camera Information is empty.
+2025-04-10 17:57:55.781 [trace] <main> BaseCamera.cpp:28 [thread-10460] ready to open Camera (23916949)
+2025-04-10 17:57:55.788 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-10460] no avt environment
+2025-04-10 17:57:55.788 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-10460] no basler library
+2025-04-10 17:57:55.789 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-10460] no da hua library
+2025-04-10 17:57:55.789 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-10460] no flir environment
+2025-04-10 17:57:55.789 [ info] <main> BaseCamera.cpp:34 [thread-10460] camera Information is empty.
+2025-04-10 17:57:55.789 [trace] <main> BaseCamera.cpp:28 [thread-10460] ready to open Camera (23893725)
+2025-04-10 17:57:55.789 [ info] <main> BaseCamera.cpp:34 [thread-10460] camera Information is empty.
+2025-04-10 19:58:20.735 [trace] <main> BaseCamera.cpp:28 [thread-21024] ready to open Camera (23916949)
+2025-04-10 19:58:20.737 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-21024] no avt environment
+2025-04-10 19:58:20.737 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-21024] no basler library
+2025-04-10 19:58:20.737 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-21024] no da hua library
+2025-04-10 19:58:20.738 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-21024] no flir environment
+2025-04-10 19:58:20.738 [ info] <main> BaseCamera.cpp:34 [thread-21024] camera Information is empty.
+2025-04-10 19:58:20.738 [trace] <main> BaseCamera.cpp:28 [thread-21024] ready to open Camera (23893725)
+2025-04-10 19:58:20.738 [ info] <main> BaseCamera.cpp:34 [thread-21024] camera Information is empty.
+2025-04-10 20:00:42.452 [trace] <main> BaseCamera.cpp:28 [thread-3644] ready to open Camera (23916949)
+2025-04-10 20:00:42.452 [warning] <CameraFactory> CameraFactoryImpl.cpp:172 [thread-3644] no avt environment
+2025-04-10 20:00:42.452 [warning] <CameraFactory> CameraFactoryImpl.cpp:195 [thread-3644] no basler library
+2025-04-10 20:00:42.452 [warning] <CameraFactory> CameraFactoryImpl.cpp:209 [thread-3644] no da hua library
+2025-04-10 20:00:42.452 [warning] <CameraFactory> CameraFactoryImpl.cpp:214 [thread-3644] no flir environment
+2025-04-10 20:00:42.452 [ info] <main> BaseCamera.cpp:34 [thread-3644] camera Information is empty.
+2025-04-10 20:00:42.452 [trace] <main> BaseCamera.cpp:28 [thread-3644] ready to open Camera (23893725)
+2025-04-10 20:00:42.452 [ info] <main> BaseCamera.cpp:34 [thread-3644] camera Information is empty.
