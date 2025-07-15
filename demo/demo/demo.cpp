@@ -15,6 +15,60 @@
 using namespace std;
 using namespace cv;
 
+
+#include <fstream>
+#include <vector>
+#include <opencv2/core.hpp>
+
+void SavePointCloudToPCDBin2(const std::vector<std::vector<cv::Point2f>>& pointClouds,
+	const std::string& filename) {
+	if (pointClouds.empty() || pointClouds[0].empty()) {
+		std::cerr << "Error: Empty point cloud data" << std::endl;
+		return;
+	}
+
+	std::ofstream file(filename, std::ios::binary);
+	if (!file.is_open()) {
+		std::cerr << "Error: Could not open file: " << filename << std::endl;
+		return;
+	}
+
+	// 计算总点数
+	size_t total_points = 0;
+	for (const auto& cloud : pointClouds) {
+		total_points += cloud.size();
+	}
+
+	// 写入标准PCD头
+	file << "# .PCD v0.7 - Point Cloud Data file format\n"
+		<< "VERSION 0.7\n"
+		<< "FIELDS x y z\n"
+		<< "SIZE 4 4 4\n"
+		<< "TYPE F F F\n"
+		<< "COUNT 1 1 1\n"
+		<< "WIDTH " << total_points << "\n"
+		<< "HEIGHT 1\n"
+		<< "VIEWPOINT 0 0 0 1 0 0 0\n"
+		<< "POINTS " << total_points << "\n"
+		<< "DATA binary\n";
+
+	// 写入点数据
+	for (const auto& cloud : pointClouds) {
+		for (const auto& point : cloud) {
+			float x = point.x;
+			float y = point.y;
+			float z = 0.0f;
+			file.write(reinterpret_cast<const char*>(&x), sizeof(float));
+			file.write(reinterpret_cast<const char*>(&y), sizeof(float));
+			file.write(reinterpret_cast<const char*>(&z), sizeof(float));
+		}
+	}
+
+	file.close();
+	std::cout << "Successfully saved " << total_points << " points to " << filename << std::endl;
+}
+
+
 // 保存点云数据到 PCD 文件（使用二进制格式）
 void SavePointCloudToPCDBin(const std::vector<std::vector<cv::Point2f>>& pointClouds, const std::string& filename) {
 	// 打开文件
@@ -54,43 +108,13 @@ void SavePointCloudToPCDBin(const std::vector<std::vector<cv::Point2f>>& pointCl
 	std::cout << "Point cloud saved to " << filename << std::endl;
 }
 
-// 保存点云数据到 PLY 文件
-void savePointCloudToPLY(const std::vector<std::vector<cv::Point2f>>& pointClouds, const std::string& filename)
-{
-	// 打开文件
-	std::ofstream plyFile(filename);
-	if (!plyFile.is_open()) {
-		std::cerr << "Error: Could not open the file for writing!" << std::endl;
-		return;
-	}
-
-	// 写入 PLY 头部
-	plyFile << "ply\n";
-	plyFile << "format ascii 1.0\n";
-	plyFile << "element vertex " << pointClouds.size() * pointClouds[0].size() << "\n"; // 总点数
-	plyFile << "property float x\n";
-	plyFile << "property float y\n";
-	plyFile << "property float z\n"; // 添加 z 属性
-	plyFile << "end_header\n";
-
-	// 写入点云数据
-	for (const auto& cloud : pointClouds) {
-		for (const auto& point : cloud) {
-			plyFile << point.x << " " << point.y << " " << 0.0f << "\n"; // z 值设为 0
-		}
-	}
-
-	// 关闭文件
-	plyFile.close();
-	std::cout << "Point cloud saved to " << filename << std::endl;
-}
 
 int main()
 {
 	try {
 		int iret;
 		gapDetectionInterface mgapDetectionInterface;
-		const string devicePath = "F:/Gap/demo/AT05BB000350110804523021801/";
+		const string devicePath = "./test/";
 		//打开相机
 		iret = mgapDetectionInterface.openDevice(devicePath);
 		if (iret != 0)
@@ -176,7 +200,7 @@ int main()
 		// 输出文件名
 		cout << "输出文件名：" << fileName << endl;
 		cout << "获取点云成功，点云数量：" << pointClouds.size() << endl;
-		savePointCloudToPLY(pointClouds, fileName);
+		SavePointCloudToPCDBin(pointClouds, fileName);
 
 		//获取校准后的数据
 		//vector<vector<Point2f>> out_pointCloud;
@@ -192,7 +216,7 @@ int main()
 		std::string fileName2 = "output_2.pcd";
 		cout << "输出文件名：" << fileName2 << endl;
 		cout << "获取点云成功，点云数量：" << pointClouds.size() << endl;
-		savePointCloudToPLY(out_pointCloud2, fileName2);
+		SavePointCloudToPCDBin(out_pointCloud2, fileName2);
 
 		if (iret != 0)
 		{
